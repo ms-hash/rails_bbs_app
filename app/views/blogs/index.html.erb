@@ -1,8 +1,34 @@
-<h1>Blogs#index</h1>
-<p>Find me in app/views/blogs/index.html.erb</p>
-
-
-<% @blogs.each do |blog| %>
-  <h3><%= link_to blog.title, blog_path(blog.id) %></h3>
-<% end %>
+<header>
+      <div class="title"><a href="/"></a></div>
+</header>
+<div class="wrap flc">
+  <div class="main">
+  <div id="dqnplus">
+	<h3><a class="black" href="/" target="_blank">最新記事</a></h3>
+	<ul>
+    <% @blogs.each do |blog| %>
+		  <li>
+		  <div class="small_font">03/16 23:49</div>
+		  <a href="http://blog.livedoor.jp/dqnplus/archives/2006912.html" target="_blank"><%= link_to blog.title, blog_path(blog.id) %></a>
+		  </li>
+    <% end %>
+	</ul>
+</div>
+    <div class="tablet-sub tablet-sub-list"></div>
+  </div>
+  <div class="sub"></div>
+</div>
 <%=  link_to "スレ立て", new_blog_path %>
+<br>
+<br>
+<% @categories.each do |category| %>
+<li class="list-group-item">
+  <%= link_to category.category, blogs_path(:cate => category.id) %>
+  <%= category.blogs.count %>件
+</li>
+<% end %>
+
+
+
+
+

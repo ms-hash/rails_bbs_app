@@ -1,3 +1,130 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 73px;
+    background: #ff8d99;
+}
+.wrap .main, header {
+    -webkit-box-sizing: border-box;
+}
+a, abbr, address, article, aside, audio, b, blockquote, body, caption, cite, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, source, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+article, aside, dialog, figure, footer, header, hgroup, hr, menu, nav, section {
+    display: block;
+}
+header {
+    display: block;
+}
+body, html {
+    font-family: 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Hiragino Sans','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    color: grey;
+    background: #faf3ea;
+}
+body {
+    line-height: 1;
+}
+header .title {
+    padding: 11px 0 9px;
+    text-align: center;
+    border-bottom: 1px dashed #eb616c;
+}
+body {
+    line-height: 1;
+}
+header .title a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: #39a9bf;
+}
+.flc:after {
+    display: block;
+}
+.flc:after, .wrap .sub .sub-part:after {
+    clear: both;
+    content: '';
+}
+nav {
+    height: 44px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+nav {
+    display: block;
+}
+.flc:after, .wrap .sub .sub-part:after {
+    clear: both;
+    content: '';
+}
+.wrap .main {
+    float: left;
+    box-sizing: border-box;
+    width: 680px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 40px;
+}
+.wrap .main, .wrap .sub .sub-part {
+    border-radius: 2px;
+    background: #fff;
+}
+.topic-list-wrap .topic-list-header {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+h3 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    border-color: lightpink;
+    border-width: 0px 0px 1px 10px;
+    border-style: solid;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    padding: 17px 5px 17px 5px;
+    border-color: #DDDDFF;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+li {
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.small_font {
+    font-size: 10px;
+}
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
