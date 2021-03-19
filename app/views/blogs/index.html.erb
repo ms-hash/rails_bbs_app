@@ -3,30 +3,41 @@
 </header>
 <div class="wrap flc">
   <div class="main">
-  <div id="dqnplus">
-	<h3><a class="black" href="/" target="_blank">最新記事</a></h3>
-	<ul>
-    <% @blogs.each do |blog| %>
-		  <li>
-		  <div class="small_font">03/16 23:49</div>
-		  <a href="http://blog.livedoor.jp/dqnplus/archives/2006912.html" target="_blank"><%= link_to blog.title, blog_path(blog.id) %></a>
-		  </li>
-    <% end %>
-	</ul>
-</div>
+    <div id="dqnplus">
+	    <h3><a class="black" href="/" target="_blank">最新記事</a></h3>
+	    <ul>
+        <% @blogs.each do |blog| %>
+		      <li>
+		      <div class="small_font">03/16 23:49</div>
+		        <%= link_to blog.title, blog_path(blog.id) %>
+		      </li>
+        <% end %>
+	    </ul>
+    </div>
     <div class="tablet-sub tablet-sub-list"></div>
   </div>
-  <div class="sub"></div>
+  <div class="sub">
+    <%=  link_to "スレ立て", new_blog_path, class: "btn btn-solid" %>
+    <br>
+    <br>
+    <div class="sub-part sub-topics mb20">
+          <p class="head">タグ別スレッド件数</p>
+          <ul>
+            <% @categories.each do |category| %>
+	          <li class="flc">
+              <a href="/topics/3269692/">
+              <div class="info">
+                <p class="title"><%= link_to category.category, blogs_path(:cate => category.id) %></p>
+                <p class="comment"><span class="icon-comment"></span><%= category.blogs.count %>件</p>
+              </div>
+              </a>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+  </div>
 </div>
-<%=  link_to "スレ立て", new_blog_path %>
-<br>
-<br>
-<% @categories.each do |category| %>
-<li class="list-group-item">
-  <%= link_to category.category, blogs_path(:cate => category.id) %>
-  <%= category.blogs.count %>件
-</li>
-<% end %>
+
 
 
 
