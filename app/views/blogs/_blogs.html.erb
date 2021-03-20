@@ -1,0 +1,9 @@
+<h3><a class="black" href="/" target="_blank">最新記事</a></h3>
+<ul>
+  <% @blogs.each do |blog| %>
+	<li>
+	  <div class="small_font">03/16 23:49</div>
+		<%= link_to blog.title, blog_path(blog.id) %>
+	</li>
+  <% end %>
+</ul>

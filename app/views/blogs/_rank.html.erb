@@ -1,0 +1,13 @@
+<p class="head">PV数</p>
+  <ul>
+    <% @rank_blogs.each do |blog| %>
+	  <li class="flc">
+        <a href="/topics/3269692/">
+        <div class="info">
+          <p class="title"><%= link_to blog.title, blog_path(blog.id) %></p>
+          <p class="comment"><span class="icon-comment"></span><%= blog.impressions_count %>件</p>
+        </div>
+        </a>
+      </li>
+    <% end %>
+  </ul>

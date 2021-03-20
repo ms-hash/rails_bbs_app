@@ -4,15 +4,7 @@
 <div class="wrap flc">
   <div class="main">
     <div id="dqnplus">
-	    <h3><a class="black" href="/" target="_blank">最新記事</a></h3>
-	    <ul>
-        <% @blogs.each do |blog| %>
-		      <li>
-		      <div class="small_font">03/16 23:49</div>
-		        <%= link_to blog.title, blog_path(blog.id) %>
-		      </li>
-        <% end %>
-	    </ul>
+      <%= render 'blogs' %>
     </div>
     <div class="tablet-sub tablet-sub-list"></div>
   </div>
@@ -21,34 +13,10 @@
     <br>
     <br>
     <div class="sub-part sub-topics mb20">
-      <p class="head">タグ検索</p>
-      <ul>
-        <% @categories.each do |category| %>
-	        <li class="flc">
-            <a href="/topics/3269692/">
-            <div class="info">
-              <p class="title"><%= link_to category.category, blogs_path(:cate => category.id) %></p>
-              <p class="comment"><span class="icon-comment"></span><%= category.blogs.count %>件</p>
-            </div>
-            </a>
-          </li>
-        <% end %>
-      </ul>
+      <%= render 'card' %>
     </div>
     <div class="sub-part sub-topics mb20">
-      <p class="head">PV数</p>
-      <ul>
-        <% @rank_blogs.each do |blog| %>
-	        <li class="flc">
-            <a href="/topics/3269692/">
-            <div class="info">
-              <p class="title"><%= link_to blog.title, blog_path(blog.id) %></p>
-              <p class="comment"><span class="icon-comment"></span><%= blog.impressions_count %>件</p>
-            </div>
-            </a>
-          </li>
-        <% end %>
-      </ul>
+      <%= render 'rank' %>
     </div>
   </div>
 </div>

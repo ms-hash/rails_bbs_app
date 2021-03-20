@@ -1,8 +1,31 @@
-<h1>Blogs#show</h1>
-<h1>カテゴリ: <%= @blog.category.category %></h1>
-<h3><%= @blog.title %></h3>
-
-
-<p><%= @blog.content %></p>
-
-<%= link_to "Back", blogs_path %>
+<header>
+      <div class="title"><a href="/"></a></div>
+</header>
+<div class="wrap flc">
+  <div class="main">
+    <div id="dqnplus">
+      <h3><%= @blog.title %></h3>
+        <a name="comments"></a>
+        <h4 id="comment">カテゴリ: <%= @blog.category.category %></h4>
+        <div id="comment-1" style="width:0;height:0;"></div>
+          <div id="comment">
+            <div id="comment_text">
+              <span>
+                <span>名無しクオリティ</span>
+              </span>
+              <p id="vlog"><%= @blog.content %></p>
+            </div>
+          </div>
+        </div>
+    <div class="tablet-sub tablet-sub-list"></div>
+  </div>
+  <div class="sub">
+    <%= link_to "スレ一覧に戻る", blogs_path, class: "btn btn-solid" %>
+    <br>
+    <br>
+    <div class="sub-part sub-topics mb20">
+    </div>
+    <div class="sub-part sub-topics mb20">
+    </div>
+  </div>
+</div>

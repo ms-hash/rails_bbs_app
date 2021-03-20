@@ -1,0 +1,13 @@
+<p class="head">タグ検索</p>
+  <ul>
+    <% @categories.each do |category| %>
+	  <li class="flc">
+        <a href="/topics/3269692/">
+        <div class="info">
+          <p class="title"><%= link_to category.category, blogs_path(:cate => category.id) %></p>
+          <p class="comment"><span class="icon-comment"></span><%= category.blogs.count %>件</p>
+        </div>
+        </a>
+      </li>
+    <% end %>
+  </ul>
