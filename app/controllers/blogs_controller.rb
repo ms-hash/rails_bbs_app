@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
     if !cate.nil? 
       @blogs = Blog.where(:category_id => cate)
     else 
-      @blogs = Blog.all
+      @blogs = Blog.all.order(created_at: :desc)
     end
     @rank_blogs = Blog.order(impressions_count: 'DESC')
   end
