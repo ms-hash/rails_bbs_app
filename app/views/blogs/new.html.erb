@@ -1,3 +1,21 @@
-<h1>Blogs#new</h1>
-<p>Find me in app/views/blogs/new.html.erb</p>
-<%= render 'form' %>
+<header>
+      <div class="title"><a href="/"></a></div>
+</header>
+<div class="wrap flc">
+  <div class="main">
+    <div id="dqnplus">
+      <%= render 'form' %>
+    </div>
+    <div class="tablet-sub tablet-sub-list"></div>
+  </div>
+  <div class="sub">
+    <%= link_to "スレ一覧に戻る", blogs_path, class: "btn btn-solid" %>
+    <br>
+    <br>
+    <div class="sub-part sub-topics mb20">
+    </div>
+    <div class="sub-part sub-topics mb20">
+    </div>
+  </div>
+</div>
+
