@@ -9,6 +9,7 @@ class BlogsController < ApplicationController
     else 
       @blogs = Blog.all.order(created_at: :desc)
     end
+    @blogs = @blogs.page(params[:page]).per(6)
     @rank_blogs = Blog.order(impressions_count: 'DESC')
   end
 
