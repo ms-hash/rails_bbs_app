@@ -9,10 +9,12 @@ class BlogsController < ApplicationController
     else 
       @blogs = Blog.all
     end
+    @rank_blogs = Blog.order(impressions_count: 'DESC')
   end
 
   def show
     @blog =Blog.find(params[:id])
+    impressionist(@blog, nil, unique: [:ip_address])
   end
 
   def new

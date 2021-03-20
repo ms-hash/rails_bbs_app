@@ -21,20 +21,35 @@
     <br>
     <br>
     <div class="sub-part sub-topics mb20">
-          <p class="head">タグ別スレッド件数</p>
-          <ul>
-            <% @categories.each do |category| %>
-	          <li class="flc">
-              <a href="/topics/3269692/">
-              <div class="info">
-                <p class="title"><%= link_to category.category, blogs_path(:cate => category.id) %></p>
-                <p class="comment"><span class="icon-comment"></span><%= category.blogs.count %>件</p>
-              </div>
-              </a>
-            </li>
-            <% end %>
-          </ul>
-        </div>
+      <p class="head">タグ検索</p>
+      <ul>
+        <% @categories.each do |category| %>
+	        <li class="flc">
+            <a href="/topics/3269692/">
+            <div class="info">
+              <p class="title"><%= link_to category.category, blogs_path(:cate => category.id) %></p>
+              <p class="comment"><span class="icon-comment"></span><%= category.blogs.count %>件</p>
+            </div>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="sub-part sub-topics mb20">
+      <p class="head">PV数</p>
+      <ul>
+        <% @rank_blogs.each do |blog| %>
+	        <li class="flc">
+            <a href="/topics/3269692/">
+            <div class="info">
+              <p class="title"><%= link_to blog.title, blog_path(blog.id) %></p>
+              <p class="comment"><span class="icon-comment"></span><%= blog.impressions_count %>件</p>
+            </div>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </div>
 
