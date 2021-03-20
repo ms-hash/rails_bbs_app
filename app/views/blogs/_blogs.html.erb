@@ -2,7 +2,7 @@
 <ul>
   <% @blogs.each do |blog| %>
 	<li>
-	  <div class="small_font">03/16 23:49</div>
+	  <div class="small_font"><%= blog.created_at.to_s(:datetime_jp) %></div>
 		<%= link_to blog.title, blog_path(blog.id) %>
 	</li>
   <% end %>

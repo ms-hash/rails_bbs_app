@@ -11,7 +11,9 @@
           <div id="comment">
             <div id="comment_text">
               <span>
-                <span>名無しクオリティ</span>
+                投稿者
+                <span>名無しさん</span>
+                <%= @blog.created_at.to_s(:datetime_jp) %>
               </span>
               <p id="vlog"><%= @blog.content %></p>
             </div>
