@@ -1,0 +1,24 @@
+<header>
+      <div class="title"><a href="/"></a></div>
+</header>
+<div class="wrap flc">
+  <div class="main">
+    <div id="dqnplus">
+    <h3><a class="black" href="/" target="_blank">検索結果</a></h3>
+      <ul>
+        <% @results.each do |blog| %>
+        <li>
+          <div class="small_font"><%= blog.created_at.to_s(:datetime_jp) %></div>
+          <%= link_to blog.title, blog_path(blog.id) %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="tablet-sub tablet-sub-list"></div>
+  </div>
+  <div class="sub">
+    <%=  link_to "スレ一覧に戻る", blogs_path, class: "btn btn-solid" %>
+    <br>
+    <br>
+  </div>
+</div>
