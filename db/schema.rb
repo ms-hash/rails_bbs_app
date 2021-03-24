@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 2021_03_19_123648) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "chats", force: :cascade do |t|
+    t.text "chat"
+    t.integer "blog_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["blog_id"], name: "index_chats_on_blog_id"
+  end
+
   create_table "impressions", force: :cascade do |t|
     t.string "impressionable_type"
     t.integer "impressionable_id"
@@ -53,4 +61,5 @@ ActiveRecord::Schema.define(version: 2021_03_19_123648) do
     t.index ["user_id"], name: "index_impressions_on_user_id"
   end
 
+  add_foreign_key "chats", "blogs"
 end
