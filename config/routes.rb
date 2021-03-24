@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :categories
   resources :blogs do 
+    resources :comments
     collection do
       get 'search'
     end

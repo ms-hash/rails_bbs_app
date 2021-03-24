@@ -3,4 +3,5 @@ class Blog < ApplicationRecord
   validates :content, presence: true
   belongs_to :category
   is_impressionable counter_cache: true
+  has_many :comments, dependent: :delete_all
 end

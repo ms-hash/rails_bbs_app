@@ -19,6 +19,23 @@
             </div>
           </div>
         </div>
+        <h3>コメント</h3>
+        <% @blog.comments.each do |comment| %>
+        <p>
+         <%= comment.body %>
+        </p>
+        <% end %>
+
+        <h3>コメントを書く</h3>
+        <%= form_for([@blog, @blog.comments.build]) do |f| %>
+          <div class="field mb-2">
+            <%= f.text_area :body, placeholder: '本文を入力してください',class: 'form-control' %>
+          </div>
+          <div class="actions">
+            <%= f.submit "投稿する", class: 'btn btn-block btn-success btn-sm' %>
+          </div>
+        <% end %>
+
     <div class="tablet-sub tablet-sub-list"></div>
   </div>
   <div class="sub">
