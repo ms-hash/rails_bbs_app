@@ -17,6 +17,8 @@ class BlogsController < ApplicationController
 
   def show
     @blog =Blog.find(params[:id])
+    @comments = @blog.comments.order("id DESC")
+    @comments = @blog.comments.page(params[:page]).per(70)
     impressionist(@blog, nil, unique: [:ip_address])
   end
 

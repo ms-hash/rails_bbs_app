@@ -19,14 +19,21 @@
             </div>
           </div>
         </div>
-        <h3>コメント</h3>
-        <% @blog.comments.each do |comment| %>
-        <p>
-         <%= comment.body %>
-        </p>
+        <% @comments.each do |comment| %>
+          <div id="comment">
+            <div id="comment_text">
+              <span>
+                投稿者
+                <span>名無しさん</span>
+                <%= comment.created_at.to_s(:datetime_jp) %>
+              </span>
+              <p id="vlog"><%= comment.body %></p>
+            </div>
+          </div>
         <% end %>
-
-        <h3>コメントを書く</h3>
+        <%= paginate @comments %>
+       
+        <h3>コメントを投稿する</h3>
         <%= form_for([@blog, @blog.comments.build]) do |f| %>
           <div class="field mb-2">
             <%= f.text_area :body, placeholder: '本文を入力してください',class: 'form-control' %>
