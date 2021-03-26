@@ -1,6 +1,9 @@
-  <%= search_form_for @q, url: search_blogs_path do |f| %>
-    <%= f.label :title_cont, 'タイトル検索', class: 'head' %>
-    <%= f.search_field :title_cont %>
-    <br>
-    <%= f.submit '検索' %>
-  <% end %>
+<%= search_form_for @q, url: search_blogs_path do |f| %>
+<p class="head">タグ検索</p>
+<div class="input-group">
+  <%= f.search_field :title_cont, class: 'form-control', placeholder: '記事タイトルを入力' %>
+	<span class="input-group-btn">
+    <%= f.submit '検索', class: 'btn btn-success' %>
+	</span>
+</div>
+<% end %>

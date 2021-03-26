@@ -11,12 +11,13 @@ class BlogsController < ApplicationController
     else 
       @blogs = Blog.all.order(created_at: :desc)
     end
-    @blogs = @blogs.page(params[:page]).per(6)
-    @rank_blogs = Blog.order(impressions_count: 'DESC')
+    @blogs = @blogs.page(params[:page]).per(50)
+    @rank_blogs = Blog.order(impressions_count: 'DESC').limit(7)
   end
 
   def show
     @blog =Blog.find(params[:id])
+    @blogs = Blog.all.order(created_at: :desc).limit(4)
     @comments = @blog.comments.order("datetime_jp DESC")
     @comments = @blog.comments.page(params[:page]).per(50)
     impressionist(@blog, nil, unique: [:ip_address])
