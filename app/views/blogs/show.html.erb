@@ -28,7 +28,7 @@
                 <span>名無しさん</span>
                 <%= comment.created_at.to_s(:datetime_jp) %>
               </span>
-              <p id="vlog"><%= comment.body %></p>
+              <p id="vlog"><%= text_url_to_link(h(comment.body)).html_safe %></p>
             </div>
           </div>
         <% end %>
