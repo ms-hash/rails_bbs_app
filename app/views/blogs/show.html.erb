@@ -1,6 +1,7 @@
 <header>
       <div class="title"><a href="/"></a></div>
 </header>
+<br>
 <div class="wrap flc">
   <div class="main">
     <div id="dqnplus">
@@ -32,7 +33,7 @@
           </div>
         <% end %>
         <%= paginate @comments %>
-       
+        <br>
         <h3>コメントを投稿する</h3>
         <%= form_for([@blog, @blog.comments.build]) do |f| %>
           <div class="field mb-2">

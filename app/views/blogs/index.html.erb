@@ -1,19 +1,23 @@
 <header>
       <div class="title"><a href="/"></a></div>
 </header>
+<br>
 <div class="wrap flc">
   <div class="main">
     <div id="dqnplus">
       <%= render 'blogs' %>
       <% paginate @blogs %>
-      <%= render 'prosearch' %>
     </div>
     <div class="tablet-sub tablet-sub-list"></div>
   </div>
   <div class="sub">
+    
     <%=  link_to "スレ立て", new_blog_path, class: "btn btn-solid" %>
     <br>
     <br>
+    <div class="sub-part sub-topics mb20">
+      <%= render 'prosearch' %>
+    </div>
     <div class="sub-part sub-topics mb20">
       <%= render 'card' %>
     </div>

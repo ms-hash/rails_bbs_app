@@ -1,7 +1,5 @@
-<br>
-<br>
   <%= search_form_for @q, url: search_blogs_path do |f| %>
-    <%= f.label :title_cont, 'タイトル検索' %>
+    <%= f.label :title_cont, 'タイトル検索', class: 'head' %>
     <%= f.search_field :title_cont %>
     <br>
     <%= f.submit '検索' %>

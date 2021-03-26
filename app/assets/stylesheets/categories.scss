@@ -30,7 +30,7 @@ h4 {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: #333;
+    color: #2d334a;
     font-size: 20px;
 }
 #comment span span {
@@ -50,12 +50,12 @@ h4 {
 	cursor: pointer;
 	line-height: 1.4;
 	transition: color 0.3s cubic-bezier(0.02,0.01,0.47,1),transform 0.3s cubic-bezier(0.02,0.01,0.47,1);
-	color: #ffffff;
+	color: #0d0d0d;
 	border: none;
 	border-width: 0;
 	border-color: transparent;
 	border-radius: 100px;
-	background: #009688;
+	background: #ff8e3c;
 }
 .cp_button07:after, .cp_button07:before {
 	position: absolute;
@@ -70,16 +70,16 @@ h4 {
 	        transform: translate(100%,-25%) translateZ(0);
 	opacity: 0;
 	border-radius: 50%;
-	background: #009688;
+	background: #ff8e3c;
 }
 .cp_button07:after, .cp_button07:before {
-	background: #ffffff;
+	background: #0d0d0d;
 }
 .cp_button07:hover {
 	transition: all 0.5s cubic-bezier(0.02,0.01,0.47,1);
 	-webkit-transform: scale(1.1) translateZ(0);
 	        transform: scale(1.1) translateZ(0);
-	color: #ffffff;
+	color: #0d0d0d;
 	box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 .cp_button07:hover:before {
@@ -99,4 +99,8 @@ h4 {
 }
 .cp_button07:focus {
 	color: #ffffff;
+}
+
+label {
+	color: #2d334a;
 }
