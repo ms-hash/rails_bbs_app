@@ -21,6 +21,7 @@ class BlogsController < ApplicationController
     @comments = @blog.comments.order("datetime_jp DESC")
     @comments = @blog.comments.page(params[:page]).per(50)
     impressionist(@blog, nil, unique: [:ip_address])
+    @rank_blogs = Blog.order(impressions_count: 'DESC').limit(7)
   end
 
   def new
