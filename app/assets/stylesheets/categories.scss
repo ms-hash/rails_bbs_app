@@ -148,6 +148,12 @@ img {
     }
 }
 @media (max-width: 540px) {
+    #comment {
+        width: 450px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
     #comment_text {
         border-bottom: dashed 1px #ddd;
         padding: 0 5px 20px;
@@ -165,6 +171,12 @@ img {
     }
 }
 @media (max-width: 414px) {
+    #comment {
+        width: 330px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
     #comment_text {
         border-bottom: dashed 1px #ddd;
         padding: 0 5px 20px;
@@ -183,6 +195,12 @@ img {
 }
 
 @media (max-width: 411px) {
+    #comment {
+        width: 315px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
     #comment_text {
         border-bottom: dashed 1px #ddd;
         padding: 0 5px 20px;
@@ -201,6 +219,12 @@ img {
 }
 
 @media (max-width: 375px) {
+    #comment {
+        width: 270px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
     #comment_text {
         border-bottom: dashed 1px #ddd;
         padding: 0 5px 20px;
@@ -218,7 +242,70 @@ img {
     }
 }
 
+@media (max-width: 360px) {
+    #comment {
+        width: 270px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    #comment span {
+        font-size: 1px;
+        color: #888;
+        font-weight: normal;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+}
+
 @media (max-width: 320px) {
+    #comment {
+        width: 230px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    #comment span {
+        font-size: 1px;
+        color: #888;
+        font-weight: normal;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 7px;
+    }
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+}
+@media (max-width: 280px) {
+    #comment {
+        width: 190px;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 15px;
+    }
     #comment span {
         font-size: 1px;
         color: #888;
@@ -241,26 +328,3 @@ img {
     }
 }
 
-
-@media (max-width: 360px) {
-    #comment span {
-        font-size: 1px;
-        color: #888;
-        font-weight: normal;
-    }
-    #vlog {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        color: #333;
-        font-size: 14px;
-    }
-    #comment_text {
-        border-bottom: dashed 1px #ddd;
-        padding: 0 5px 20px;
-        list-style-position: inside;
-        display: inline-block;
-    }
-}
