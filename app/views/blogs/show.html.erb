@@ -49,30 +49,10 @@
     <br>
     <br>
     <div class="sub-part sub-topics mb20">
-      <h3><a class="black" href="/">最新スレ</a></h3>
-      <ul>
-        <% @blogs.each do |blog| %>
-        <li>
-          <div class="small_font"><%= blog.created_at.to_s(:datetime_jp) %></div>
-          <%= link_to blog.title, blog_path(blog.id) %>
-        </li>
-        <% end %>
-      </ul>
+      <%= render 'blogs' %>
     </div>
     <div class="sub-part sub-topics mb20">
-      <p class="head">PV数</p>
-        <ul>
-          <% @rank_blogs.each do |blog| %>
-          <li class="flc">
-              <a href="/topics/3269692/">
-              <div class="info">
-                <p class="title"><%= link_to blog.title, blog_path(blog.id) %></p>
-                <p class="comment"><span class="icon-comment"></span><%= blog.impressions_count %>pv</p>
-              </div>
-              </a>
-            </li>
-          <% end %>
-        </ul>
+      <%= render 'rank' %>
     </div>
   </div>
 </div>
