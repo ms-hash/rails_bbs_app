@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/platooon', as: 'rails_admin'
   root 'blogs#index'
   resources :categories
   resources :blogs do 
