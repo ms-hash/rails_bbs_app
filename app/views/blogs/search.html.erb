@@ -7,7 +7,7 @@
         <% @results.each do |blog| %>
         <li>
           <div class="small_font"><%= blog.created_at.to_s(:datetime_jp) %></div>
-          <%= link_to blog.title, blog_path(blog.id) %>
+          <%= link_to blog.title.truncate(30), blog_path(blog.id) %>
         </li>
         <% end %>
       </ul>
