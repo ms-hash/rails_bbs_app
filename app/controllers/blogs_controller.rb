@@ -60,7 +60,7 @@ class BlogsController < ApplicationController
   end
 
   def search
-    @results = @q.result
+    @results = @q.result.order(created_at: :desc).page(params[:page]).per(50)
   end
 
   private 
