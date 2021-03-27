@@ -167,3 +167,274 @@ a.btn-solid {
     border-bottom: 4px solid #ff8e3c;
     border-left: 4px solid #ff8e3c;
   }
+  @media (max-width: 1024px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 888px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 888px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 768px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 650px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 650px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 767px) {
+      .wrap .flc {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        border: 0;
+        outline: 0;
+        background: 0 0
+    }
+    .wrap .main {
+        float: left;
+        box-sizing: border-box;
+        width: 480px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding: 20px 20px 40px;
+    }
+    .wrap .sub {
+        float: right;
+        width: 480px;
+        margin-right: 20px;
+        margin-bottom: 114px;
+    }
+}
+
+@media (max-width: 540px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 470px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 470px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 414px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 350px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 350px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 411px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 340px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 340px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 375px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 300px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 300px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+}
+
+@media (max-width: 360px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 290px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 290px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 250px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 250px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+  p {
+      font-size: 7px;
+  }
+  a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 280px) {
+    .wrap .flc {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: 0 0
+  }
+  .wrap .main {
+      float: left;
+      box-sizing: border-box;
+      width: 210px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 20px 20px 40px;
+  }
+  .wrap .sub {
+      float: right;
+      width: 210px;
+      margin-right: 20px;
+      margin-bottom: 114px;
+  }
+  a {
+      font-size: 14px;
+  }
+}

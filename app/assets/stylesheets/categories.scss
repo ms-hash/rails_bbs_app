@@ -130,3 +130,36 @@ img {
     width: 280px;
     height: 63px;
 }
+@media (max-width: 320px) {
+    #comment span {
+        font-size: 1px;
+        color: #888;
+        font-weight: normal;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 360px) {
+    #comment span {
+        font-size: 1px;
+        color: #888;
+        font-weight: normal;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
