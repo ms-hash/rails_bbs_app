@@ -9,10 +9,20 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+      <div class="title">
+        <a href="/">
+          <img src="/assets/logp.png" alt="雑談突撃 たこツボっ!">
+        </a>
+      </div>
+  </header>
   <body>
     <div class="container">
       <%= yield %>
     </div>
   </body>
+  <div class="footer">
+    <div class="footer-logo"><a href="/"></a></div>
+    <div class="links flc"></div>
+  </div>
 </html>
