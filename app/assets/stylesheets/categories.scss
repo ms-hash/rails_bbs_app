@@ -130,6 +130,94 @@ img {
     width: 280px;
     height: 63px;
 }
+@media (max-width: 767px) {
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
+@media (max-width: 540px) {
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
+@media (max-width: 414px) {
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 411px) {
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
+    #vlog {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #333;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 320px) {
     #comment span {
         font-size: 1px;
@@ -145,7 +233,14 @@ img {
         color: #333;
         font-size: 7px;
     }
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
+    }
 }
+
 
 @media (max-width: 360px) {
     #comment span {
@@ -161,5 +256,11 @@ img {
         margin-inline-end: 0px;
         color: #333;
         font-size: 14px;
+    }
+    #comment_text {
+        border-bottom: dashed 1px #ddd;
+        padding: 0 5px 20px;
+        list-style-position: inside;
+        display: inline-block;
     }
 }
